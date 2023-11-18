@@ -1,6 +1,7 @@
 Rails.application.routes.draw do
-  # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
-
-  # Defines the root path route ("/")
-  # root "articles#index"
+  root 'main#cohort'
+  get '/cohort' => 'main#cohort'
+  get '/jackson' => 'main#jackson'
+  get '/sam' => 'main#sam'
+  get "/cubed/:num1" => 'main#cubed'
 end
